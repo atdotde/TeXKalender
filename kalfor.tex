@@ -1,0 +1,667 @@
+%\input /home/robert/robsenv
+%
+%
+%
+\input colordvi
+\parindent=0cm
+\overfullrule=0pt
+% So passt es jetzt mal fuer LaserJet 4700dn
+\def\einruecken{\hskip 3.5cm}   % Einsetzen fuer horizontales
+                                % Alignment vorne/hinten
+\def\runter{\vbox to  -0mm{\vss}\par}         % Einsetzen fuer
+%                                vertikales Alignment auf Rueckseite 
+\def\rauf{\par\vbox to 3mm{\vss}\par}
+%\def\einruecken{\relax}
+\font\gross=cmr10 scaled \magstep1
+\font\enorm=cmr10 scaled 6192
+%\font\enormit=bbm10 scaled 6192
+\font\enormit=cmti10 scaled 6192 % Echter Font:cmti10 scaled 6192
+%\font\enormit=ocmr10 scaled 6192 % Echter Font:cmti10 scaled 6192
+\font\norm=cmb10 scaled 2488
+%\font\normit=bbm10 scaled 2488
+\font\normit=cmti10 scaled 2488
+%\font\normit=ocmr10 scaled 2488
+\font\klein=cmr7
+\font\schrift=cmr10 
+\def\setfeiertagfont#1{\enormit\Red{#1}}
+\def\setfeiertagfontnormal#1{\normit\Red{#1}}
+\def\ignore#1{}
+\nopagenumbers
+\def\Normaltag{\global\let\grtag=\enorm \global\let\kltag=\norm \global\let\wtagfont=\rm}
+\def\Feiertag{\global\let\grtag=\setfeiertagfont \global\let\kltag=\setfeiertagfontnormal \global\let\wtagfont=\it}
+\def\zzeile#1{\hbox to 6.3 cm{\hskip 1em #1\hskip 1em\strut}}
+\def\dzeile#1{\hbox to 4.2 cm{\hskip 1em #1\hskip 1em\strut}}  
+\noindent$\phantom . $\vskip -0.5cm
+%\rauf
+\noindent\hskip 1cm
+\hbox {
+       \vbox{\hrule\hbox{\vrule\hss\vbox to 21.1cm{\vss\hbox to
+       15.3cm{\hss Schnittvorlage\hss}\hbox to 15.8cm{\hss Filename: \jobname.tex\hss}\vss}\hss\vrule}\hrule}\hss
+}
+\vfil\eject R\"uckseite Schnittvorlage\vfill\eject
+\noindent$\phantom . $\vskip 5cm
+{\relax\hskip 3cm\enorm kalen}\par
+\vskip 2cm
+{\relax\hskip 3cm\norm Roberts \TeX -Style \par\relax\hskip 3cm f\"ur FilOFax-Einlagen\par 
+\vskip 1cm
+\relax\hskip 3cm Version 3.4\par\relax\hskip 3cm vom 7. Januar 2014}
+\vfill\eject
+%\noindent
+\def\woche{
+\rauf
+{\noindent\schrift\strut\regah.\regba--\reghj.\regic}\par
+\hbox to 12.6cm {\vrule width1pt
+%
+\vbox to 18.5cm{\hrule height1pt
+\regaf
+\vskip 3mm
+\hbox to 4.2cm {{\grtag \regah}\wtagfont Montag\hfil}
+\hbox to 4.2cm{\hskip 1em\gross\strut\regbf \hss}
+\vskip 5mm
+\hbox to 4.2cm {\strut\hskip 1em Memo:\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regbc\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regbd\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regbe\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\vskip 1cm
+\hbox to 4.2cm {\strut\hskip 1em 8.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 9.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 10.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 11.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 12.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 13.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 14.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 15.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 16.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 17.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 18.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 19.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 20.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\vss
+\hbox to 4.2cm {\klein \regai\hss}
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\regbh\vskip 3mm
+\hbox to 4.2cm {{\grtag \regbj}\wtagfont Dienstag\hfil}
+\hbox to 4.2cm{\hskip 1em\gross\strut\regch \hss}
+\vskip 5mm
+\hbox to 4.2cm {\strut\hskip 1em Memo:\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regce\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regcf\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regcg\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\vskip 1cm
+\hbox to 4.2cm {\strut\hskip 1em 8.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 9.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 10.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 11.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 12.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 13.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 14.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 15.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 16.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 17.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 18.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 19.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 20.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\vss
+\hbox to 4.2cm {\klein \regca\hss}
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\regcj\vskip 3mm
+\hbox to 4.2cm {{\grtag \regdb}\wtagfont Mittwoch\hfil}
+\hbox to 4.2cm{\hskip 1em\gross\strut \regdj\hss}
+\vskip 5mm
+\hbox to 4.2cm {\strut\hskip 1em Memo:\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regdg\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regdh\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regdi\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\vskip 1cm
+\hbox to 4.2cm {\strut\hskip 1em 8.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 9.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 10.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 11.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 12.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 13.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 14.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 15.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 16.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 17.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 18.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 19.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 20.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\vss
+\hbox to 4.2cm {\klein \regdc\hss}
+\hrule height1pt}
+%
+\vrule\hss}
+\vfill\eject
+{\parindent=0cm\par
+%was .\par
+\noindent
+\runter
+\einruecken
+{\schrift\regac.Woche, noch \regad}\par
+\einruecken
+\hbox to 12.6cm {\vrule 
+%
+\vbox to 18.5cm{\hrule height1pt
+\regeb\vskip 3mm
+\hbox to 4.2cm {{\grtag \reged}\wtagfont Donnerstag\hfil}
+\hbox to 4.2cm{\hskip 1em\gross\strut \regfb\hss}
+\vskip 5mm
+\hbox to 4.2cm {\strut\hskip 1em Memo:\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regei\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regej\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regfa\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\vskip 1cm
+\hbox to 4.2cm {\strut\hskip 1em 8.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 9.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 10.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 11.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 12.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 13.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 14.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 15.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 16.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 17.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 18.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 19.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 20.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\vss
+\hbox to 4.2cm {\klein \regee\hss}
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\regfd\vskip 3mm
+\hbox to 4.2cm {{\grtag \regff}Freitag\hfil}
+\hbox to 4.2cm{\hskip 1em\gross\strut \reggd\hss}
+\vskip 5mm
+\hbox to 4.2cm {\strut\hskip 1em Memo:\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regga\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \reggb\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \reggc\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em\hrulefill\hskip 1em}
+\vskip 1cm
+\hbox to 4.2cm {\strut\hskip 1em 8.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 9.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 10.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 11.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 12.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 13.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 14.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 15.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 16.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 17.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 18.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 19.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 20.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 2em\hrulefill\hskip 1em}
+\vss
+\hbox to 4.2cm {\klein \regfg\hss}
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\reggf\vskip 1.5mm
+\hbox to 4.2cm {{\kltag \reggh}\wtagfont\ Samstag\hfil}
+\hbox to 4.2cm{\hskip 1em\gross\strut \reghf\hss}
+\vskip 2.5mm
+\hbox to 4.2cm {\strut\hskip 1em Memo:\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \reghc\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \reghd\hrulefill\hskip 1em}
+\vskip 6mm
+\hbox to 4.2cm {\strut\hskip 1em 8.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 9.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 10.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 11.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 12.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 13.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 14.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 15.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 16.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 17.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 18.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 19.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 20.00\hrulefill\hskip 1em}
+\vss
+\hrule
+\reghh\vskip 1.5mm
+\hbox to 4.2cm {{\kltag \reghj}\sl\ {Sonntag}\hfil}
+\hbox to 4.2cm{\hskip 1em\gross\strut \regih\hss}
+\vskip 2.5mm
+\hbox to 4.2cm {\strut\hskip 1em Memo:\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regie\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em \regif\hrulefill\hskip 1em}
+\vskip 6mm
+\hbox to 4.2cm {\strut\hskip 1em 8.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 9.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 10.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 11.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 12.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 13.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 14.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 15.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 16.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 17.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 18.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 19.00\hrulefill\hskip 1em}
+\hbox to 4.2cm {\strut\hskip 1em 20.00\hrulefill\hskip 1em}
+\vss
+\hrule height1pt}
+%
+\vrule width1pt \hss}
+\vfill\eject}}
+%
+%                                      Leere Seite
+%                                      Links
+\ignore{
+\hbox to 12.6cm {\vrule width1pt
+%
+\vbox to 18.5cm{\hrule height1pt
+\regaf
+\vskip 3mm
+\hbox to 4.2cm {\hfil}%               In solche hboxen eintragen
+\vss
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\hbox to 4.2cm{\hss}
+\vss
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\hbox to 4.2cm{\hss}
+\vss
+\hrule height1pt}
+\vrule\hss}
+\vfill\eject
+%       
+{\parindent=0cm                         Rechte Seite
+\hbox to 12.6cm {\vrule
+%
+\vbox to 18.5cm{\hrule height1pt
+\regaf
+%\vskip 3mm
+\hbox to 4.2cm {\hfil}%               In solche hboxen eintragen
+\vss
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\hbox to 4.2cm{\hss}
+\vss
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\hbox to 4.2cm{\hss}
+\vss
+\hrule height1pt}
+\vrule  width1pt\hss}
+\vfill\eject
+}}
+%                                            Telefonliste
+\ignore{
+\hbox to 12.6cm {\vrule width1pt
+%
+\vbox to 18.5cm{\hrule height1pt
+\vskip 3mm
+\hbox to 6.3cm {\norm \strut A--D\hfil}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\vss
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\vskip 3mm 
+\hbox to 6.3cm {\norm \strut E--H\hfil}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\vss
+\hrule height1pt}
+\vrule\hss}
+\vfill\eject
+{\parindent=0cm
+\hbox to 12.6cm {\vrule 
+%
+\vbox to 18.5cm{\hrule height1pt
+\vskip 3mm
+\hbox to 6.3cm {\norm \strut I--M\hfil}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\vss
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\vskip 3mm 
+\hbox to 6.3cm {\norm \strut N--Q\hfil}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\vss
+\hrule height1pt}
+\vrule width1pt\hss}
+\vfill\eject}
+\hbox to 12.6cm {\vrule width1pt
+%
+\vbox to 18.5cm{\hrule height1pt
+\vskip 3mm
+\hbox to 6.3cm {\norm \strut R--T\hfil}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\vss
+\hrule height1pt}
+%
+\vrule\vbox to 18.5cm{\hrule height1pt
+\vskip 3mm 
+\hbox to 6.3cm {\norm \strut U--Z\hfil}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\zzeile{\hrulefill}
+\vss
+\hrule height1pt}
+\vrule\hss}
+\vfill\eject
+}
