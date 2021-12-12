@@ -22,3 +22,5 @@ Then you have to process it in several steps (going via postscript is required t
     pstopdf example2020.ps 
 
 All calendrical calculations for holidays like Easter etc are inspired by the wonderful book ["Calendrical Calculations"](https://www.cs.tau.ac.il/~nachum/calendar-book/third-edition/) by Dershowitz and Reingold.
+
+You might need to adjust the items on top of kalfor.tex to make your printer in duplex mode produce nicely aligned boxes on both sides.
