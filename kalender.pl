@@ -15,7 +15,7 @@ my @tim = (31,31,28,31,30,31,30,31,31,30,31,30,31);
 
 my @tag = ("Sonntag","Montag","Dienstag","Mitwoch","Donnerstag",
 	  "Freitag","Sonnabend","Sonntag");  
-do 'calbook.pl';
+do './calbook.pl';
 
 $tim[2] = 29 if &gregorian_leap_year($jahr);
   
@@ -77,6 +77,7 @@ close(in);
 
 print STDERR "Erstelle TeX-File\n";
 
+print "\\def\\jahr{$jahr}\n";
 print "\\input kalfor\n\n";
 while(1){
     &a(1996);
